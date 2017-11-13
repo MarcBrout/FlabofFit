@@ -11,24 +11,230 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_margin="10dp"
+        android:layout_margin="5dp"
         android:layout_weight="1"
-        android:background="@drawable/rounded_corners"
-        android:backgroundTint="#2ca5f5">
+        android:background="@drawable/rounded_all_corners"
+        tools:background="@drawable/weight_bg">
 
+        <ImageView
+            android:id="@+id/weightImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:scaleType="matrix"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:src="@drawable/weight" />
+
+        <TextView
+            android:id="@+id/weightPercentTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:paddingBottom="3dp"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:text="30%"
+            android:textColor="@android:color/white"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/weightLiftView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/weightPercentTextView"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:text="@string/weight_lifting"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/evenLiftTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/weightLiftView"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:text="Do you even lift?"
+            android:textColor="#b1cfdd" />
+
+        <TextView
+            android:id="@+id/setTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/rounded_tr_bl_corners"
+            android:backgroundTint="#44000000"
+            android:gravity="right"
+            android:paddingBottom="3dp"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:paddingTop="3dp"
+            android:text="10 sets"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
     </RelativeLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1">
+        android:layout_margin="5dp"
+        android:layout_weight="1"
+        android:background="@drawable/rounded_all_corners"
+        tools:background="@drawable/yoga_bg">
 
+        <ImageView
+            android:id="@+id/lotusImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:scaleType="matrix"
+            android:scaleX="0.6"
+            android:scaleY="0.6"
+            android:src="@drawable/lotus" />
+
+        <TextView
+            android:id="@+id/yogaPercentTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:paddingBottom="3dp"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:text="15%"
+            android:textColor="@android:color/white"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/yogaTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/yogaPercentTextView"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:text="Yoga"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/yogaSubTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="24dp"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:text="namaste"
+            android:textColor="#b1cfdd" />
+
+        <TextView
+            android:id="@+id/hourTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/rounded_tr_bl_corners"
+            android:backgroundTint="#44000000"
+            android:gravity="right"
+            android:paddingBottom="3dp"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:paddingTop="3dp"
+            android:text="1 hour"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
     </RelativeLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1">
+        android:layout_margin="5dp"
+        android:layout_weight="1"
+        android:background="@drawable/rounded_all_corners"
+        tools:background="@drawable/cardio_bg">
 
+        <ImageView
+            android:id="@+id/cardioImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:scaleType="matrix"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:src="@drawable/heart" />
+
+        <TextView
+            android:id="@+id/cardioPercentTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:paddingBottom="3dp"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:text="22%"
+            android:textColor="@android:color/white"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/cardioPercentTextView"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:text="Cardio"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/cardioSubTitleView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView2"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:text="Run, Forrest, run!"
+            android:textColor="#b1cfdd" />
+
+        <TextView
+            android:id="@+id/cardioSetView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/rounded_tr_bl_corners"
+            android:backgroundTint="#44000000"
+            android:gravity="right"
+            android:paddingBottom="3dp"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:paddingTop="3dp"
+            android:text="5 miles"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
     </RelativeLayout>
+
 </LinearLayout>
