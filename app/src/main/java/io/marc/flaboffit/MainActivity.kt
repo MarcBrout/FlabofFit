@@ -7,6 +7,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : Activity() {
     companion object {
+        val TASK = "task"
         val TASK_LIFT = "Weight Lifting"
         val TASK_YOGA = "Yoga"
         val TASK_CARDIO = "Cardio"
@@ -29,7 +30,7 @@ class MainActivity : Activity() {
 
     private fun taskChosen(task: String) {
         val intent = Intent(this, TaskActivity::class.java)
-        intent.putExtra("task", task)
+        intent.putExtra(TASK, task)
         startActivity(intent)
     }
 }
