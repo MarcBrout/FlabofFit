@@ -2,6 +2,7 @@ package io.marc.flaboffit
 
 import android.app.Activity
 import android.os.Bundle
+import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_task.*
 
 class TaskActivity : Activity() {
@@ -10,7 +11,7 @@ class TaskActivity : Activity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_task)
 
-        when (intent.getStringExtra(MainActivity.TASK)) {
+        when (intent.getStringExtra(MainActivity.PARAM_TASK)) {
             MainActivity.TASK_LIFT -> configureLift()
             MainActivity.TASK_YOGA -> configureYoga()
             MainActivity.TASK_CARDIO -> configureCardio()
